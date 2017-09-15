@@ -6,7 +6,7 @@ import io.realm.Realm;
 
 /**
  * BasePresenter
- * Created by linzhixin on 2017/9/6.
+ * Created by Dedpp on 2017/9/6.
  */
 
 public abstract class BasePresenter<T extends ViewDataBinding, A extends BaseActivity> {

@@ -10,7 +10,7 @@ import io.realm.RealmSchema;
 
 /**
  * Migration
- * Created by linzhixin on 17/9/5.
+ * Created by Dedpp on 17/9/5.
  */
 public class Migration implements RealmMigration {
 

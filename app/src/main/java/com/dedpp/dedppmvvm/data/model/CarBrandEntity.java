@@ -7,7 +7,7 @@ import io.realm.annotations.PrimaryKey;
 
 /**
  * CarBrandEntity
- * Created by linzhixin on 2017/9/5.
+ * Created by Dedpp on 2017/9/5.
  */
 
 public class CarBrandEntity extends RealmObject {

@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * DataBindingAdapter
- * Created by linzhixin on 2017/9/11.
+ * Created by Dedpp on 2017/9/11.
  */
 
 public abstract class DataBindingAdapter<T, K extends BaseViewHolder> extends BaseQuickAdapter<T, K> {

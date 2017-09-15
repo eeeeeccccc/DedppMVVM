@@ -6,7 +6,7 @@ import io.realm.annotations.RealmModule;
 
 /**
  * MyModule
- * Created by linzhixin on 17/9/5.
+ * Created by Dedpp on 17/9/5.
  */
 @RealmModule(classes = {CarBrandEntity.class})
 public class MyModule {

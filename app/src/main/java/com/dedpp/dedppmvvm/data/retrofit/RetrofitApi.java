@@ -13,7 +13,7 @@ import retrofit2.http.POST;
 
 /**
  * RetrofitApi
- * Created by linzhixin on 2017/9/4.
+ * Created by Dedpp on 2017/9/4.
  */
 
 public interface RetrofitApi {

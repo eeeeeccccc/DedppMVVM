@@ -9,7 +9,7 @@ import io.reactivex.schedulers.Schedulers;
 
 /**
  * RxCountDown
- * Created by linzhixin on 2017/7/27.
+ * Created by Dedpp on 2017/7/27.
  */
 
 public class RxCountDown {

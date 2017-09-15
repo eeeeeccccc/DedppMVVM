@@ -5,7 +5,7 @@ import com.bumptech.glide.module.AppGlideModule;
 
 /**
  * MyAppGlideModule
- * Created by linzhixin on 2017/9/7.
+ * Created by Dedpp on 2017/9/7.
  */
 
 @GlideModule

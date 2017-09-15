@@ -5,7 +5,7 @@ import com.google.gson.JsonSyntaxException;
 
 /**
  * GsonUtil
- * Created by linzhixin on 2017/7/28.
+ * Created by Dedpp on 2017/7/28.
  */
 
 public class GsonUtil {

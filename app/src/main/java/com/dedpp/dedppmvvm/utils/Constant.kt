@@ -2,7 +2,7 @@ package com.dedpp.dedppmvvm.utils
 
 /**
  * Constant
- * Created by linzhixin on 2017/8/25.
+ * Created by Dedpp on 2017/8/25.
  */
 class Constant {
 

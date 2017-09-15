@@ -48,7 +48,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * RetrofitClient
- * Created by linzhixin on 2017/8/29.
+ * Created by Dedpp on 2017/8/29.
  */
 
 public class RetrofitClient {

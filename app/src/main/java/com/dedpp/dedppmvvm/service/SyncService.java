@@ -20,7 +20,7 @@ import io.realm.Realm;
 
 /**
  * SyncService
- * Created by linzhixin on 2017/9/5.
+ * Created by Dedpp on 2017/9/5.
  */
 
 public class SyncService extends IntentService {

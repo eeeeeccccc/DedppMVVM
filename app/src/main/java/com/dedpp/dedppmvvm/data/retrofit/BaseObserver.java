@@ -11,7 +11,7 @@ import io.reactivex.disposables.Disposable;
 
 /**
  * BaseObserver
- * Created by linzhixin on 2017/9/4.
+ * Created by Dedpp on 2017/9/4.
  */
 public abstract class BaseObserver<T> implements Observer<BaseEntity<T>> {
 

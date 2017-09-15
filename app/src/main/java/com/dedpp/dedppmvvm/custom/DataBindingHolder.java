@@ -8,7 +8,7 @@ import com.dedpp.dedppmvvm.R;
 
 /**
  * DataBindingHolder
- * Created by linzhixin on 2017/9/11.
+ * Created by Dedpp on 2017/9/11.
  */
 
 public class DataBindingHolder extends BaseViewHolder {

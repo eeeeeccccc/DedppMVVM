@@ -2,7 +2,7 @@ package com.dedpp.dedppmvvm.utils
 
 /**
  * SPKeys
- * Created by linzhixin on 2017/9/6.
+ * Created by Dedpp on 2017/9/6.
  */
 class SPKeys {
 
