@@ -3,6 +3,7 @@ package com.dedpp.dedppmvvm.base
 import android.annotation.SuppressLint
 import android.app.Application
 import android.content.Context
+import android.support.multidex.MultiDex
 import com.blankj.utilcode.util.Utils
 import com.dedpp.dedppmvvm.data.realm.Migration
 import com.dedpp.dedppmvvm.data.realm.MyModule
@@ -32,7 +33,7 @@ class MyApplication : Application() {
         context = applicationContext
         Utils.init(this)
 
-//        SyncService.openSyncService(context, 0)FIXME
+//        SyncService.openSyncService(context, 0)//FIXME
 
         Realm.init(this)
         val config = RealmConfiguration.Builder()
@@ -42,6 +43,11 @@ class MyApplication : Application() {
                 .migration(Migration())
                 .build()
         Realm.setDefaultConfiguration(config)
+    }
+
+    override fun attachBaseContext(base: Context?) {
+        super.attachBaseContext(base)
+        MultiDex.install(this)
     }
 
 }

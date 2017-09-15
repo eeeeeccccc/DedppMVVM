@@ -30,6 +30,7 @@ allprojects {
         sdkVersion = 26
         retrofit2 = "2.3.0"
         glide = "4.0.0"
+        smartRefresh = "1.0.3"
     }
 }
 
