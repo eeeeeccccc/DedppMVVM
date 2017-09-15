@@ -23,7 +23,8 @@ public abstract class BasePresenter<T extends ViewDataBinding, A extends BaseAct
     /**
      * 初始化页面
      */
-    protected abstract void initView();
+    protected void initView() {
+    }
 
     protected void destroy() {
         if (realm != null) {

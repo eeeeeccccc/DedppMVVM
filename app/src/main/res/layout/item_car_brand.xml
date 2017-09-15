@@ -9,7 +9,7 @@
 
         <variable
             name="presenter"
-            type="com.dedpp.dedppmvvm.act.TestActivity.CarBrandAdapter.CarBrandPresenter" />
+            type="com.dedpp.dedppmvvm.act.RetrofitRealmActivity.CarBrandAdapter.CarBrandPresenter" />
     </data>
 
     <LinearLayout

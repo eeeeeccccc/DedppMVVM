@@ -1,7 +1,10 @@
 package com.dedpp.dedppmvvm.act;
 
+import android.content.Context;
+import android.content.Intent;
 import android.databinding.ObservableInt;
 import android.databinding.ViewDataBinding;
+import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.text.TextUtils;
 import android.widget.ImageView;
@@ -17,7 +20,7 @@ import com.dedpp.dedppmvvm.custom.DataBindingHolder;
 import com.dedpp.dedppmvvm.data.model.CarBrandEntity;
 import com.dedpp.dedppmvvm.data.retrofit.BaseObserver;
 import com.dedpp.dedppmvvm.data.retrofit.RetrofitClient;
-import com.dedpp.dedppmvvm.databinding.ActivityTestBinding;
+import com.dedpp.dedppmvvm.databinding.ActivityRetrofitRealmBinding;
 import com.dedpp.dedppmvvm.glide.GlideApp;
 import com.dedpp.dedppmvvm.utils.LogUtil;
 import com.dedpp.dedppmvvm.utils.SPKeys;
@@ -29,15 +32,22 @@ import io.realm.RealmChangeListener;
 import io.realm.RealmResults;
 
 /**
- * TestActivity
+ * RetrofitRealmActivity
  * Created by linzhixin on 2017/9/6.
  */
 
-public class TestActivity extends BaseActivity<ActivityTestBinding, TestActivity.Presenter> {
+public class RetrofitRealmActivity extends BaseActivity<ActivityRetrofitRealmBinding, RetrofitRealmActivity.Presenter> {
+
+    public static Intent createIntent(Context context) {
+        Intent intent = new Intent(context, RetrofitRealmActivity.class);
+        Bundle bundle = new Bundle();
+        intent.putExtras(bundle);
+        return intent;
+    }
 
     @Override
     protected int getLayoutRes() {
-        return R.layout.activity_test;
+        return R.layout.activity_retrofit_realm;
     }
 
     @Override
@@ -49,13 +59,13 @@ public class TestActivity extends BaseActivity<ActivityTestBinding, TestActivity
         dataBinding.setPresenter(presenter);
     }
 
-    public static class Presenter extends BasePresenter<ActivityTestBinding, TestActivity> {
+    public static class Presenter extends BasePresenter<ActivityRetrofitRealmBinding, RetrofitRealmActivity> {
 
         public CarBrandAdapter adapter;
 
         public final ObservableInt count = new ObservableInt();
 
-        public Presenter(ActivityTestBinding dataBinding, TestActivity activity) {
+        public Presenter(ActivityRetrofitRealmBinding dataBinding, RetrofitRealmActivity activity) {
             super(dataBinding, activity);
             realm = Realm.getDefaultInstance();
         }
@@ -111,12 +121,12 @@ public class TestActivity extends BaseActivity<ActivityTestBinding, TestActivity
 
     public static class CarBrandAdapter extends DataBindingAdapter<CarBrandEntity, DataBindingHolder> {
 
-        private TestActivity activity;
+        private RetrofitRealmActivity activity;
         private CarBrandPresenter presenter;
         private RealmResults<CarBrandEntity> realmResults;
         private RealmChangeListener<RealmResults<CarBrandEntity>> listener;
 
-        public CarBrandAdapter(TestActivity activity, RealmResults<CarBrandEntity> data) {
+        public CarBrandAdapter(RetrofitRealmActivity activity, RealmResults<CarBrandEntity> data) {
             super(R.layout.item_car_brand, data);
             this.activity = activity;
             presenter = new CarBrandPresenter();

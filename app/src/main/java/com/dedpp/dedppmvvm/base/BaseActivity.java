@@ -1,5 +1,6 @@
 package com.dedpp.dedppmvvm.base;
 
+import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
 import android.os.Bundle;
@@ -54,6 +55,14 @@ public abstract class BaseActivity<T extends ViewDataBinding, P extends BasePres
      * 初始化DataBinding
      */
     protected abstract void inject();
+
+    public BaseActivity getActivity() {
+        return this;
+    }
+
+    public Context getContext() {
+        return this;
+    }
 
     public void rxClick(View view, Consumer<Object> consumer) {
         RxView.clicks(view)

@@ -16,7 +16,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".act.TestActivity"
+            android:name=".act.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme">
@@ -27,9 +27,9 @@
             </intent-filter>
         </activity>
 
-        <!--<activity
-            android:name=".act.MainActivity"
-            android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".act.RetrofitRealmActivity"
+            android:screenOrientation="portrait" />
 
         <service android:name=".service.SyncService" />
 
